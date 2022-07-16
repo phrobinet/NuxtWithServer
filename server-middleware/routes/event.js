@@ -1,15 +1,15 @@
 import express from 'express';
 import Event from '~/model/Event';
 import { eventValidation } from '~/service/validation';
+import { tokenVerify } from '~/service/tokenService';
 
 const app = express();
 
 // Post an event
 app.post('/', async(req, res) => {
-  console.log("🦄🦄🦄✨🌈🦄🌍🌏🦄🦄🦄");
   // Validation of data
-  // const {error} = eventValidation(req.body);
-  // if (error) return res.status(400).send(error.details);
+  const {error} = eventValidation(req.body);
+  if (error) return res.status(400).send(error.details);
 
   // Create a new event
   const event = new Event({
@@ -28,7 +28,7 @@ app.post('/', async(req, res) => {
 });
 
 // Get all events
-app.get('/', async(req, res) => {
+app.get('/', tokenVerify, async(req, res) => {
   try {
     const event = await Event.find();
     res.send(event);
@@ -39,7 +39,6 @@ app.get('/', async(req, res) => {
 
 // Get an event
 app.get('/:eventId', async(req, res) => {
-  console.log(req.params.eventId);
   try {
     const event = await Event.findById(req.params.eventId);
     res.send(event);
@@ -51,6 +50,11 @@ app.get('/:eventId', async(req, res) => {
 
 // Update an event
 app.patch('/:eventId', async(req, res) => {
+  // Validation of data
+  const {error} = eventValidation(req.body);
+  if (error) return res.status(400).send(error.details);
+
+  // Update Event
   try{
     console.log(req.body);
     const updatedEvent = await Event.findByIdAndUpdate({_id: req.params.eventId}, {$set: req.body});
@@ -61,7 +65,7 @@ app.patch('/:eventId', async(req, res) => {
 })
 
 // Delete an event
-app.delete('/:eventId', async(req, res) => {
+app.delete('/:eventId', tokenVerify, async(req, res) => {
   try {
     const event = await Event.findByIdAndDelete(req.params.eventId);
     res.send(event);

@@ -1,8 +1,10 @@
 import express from 'express';
-import User from '~/model/User';
-import { registerValidation, loginValidation } from '~/service/validation';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import User from '~/model/User';
+import { registerValidation, loginValidation } from '~/service/validation';
+import { generateAccessToken } from '~/service/tokenService';
+
 
 const app = express();
 
@@ -51,13 +53,15 @@ app.post('/login', async (req, res) => {
   if (!validPassword) return res.status(400).send('Le mot de passe est incorrect');
 
   // Create and assign a token
-  const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
-  console.log('token:', token)
-  // res.header('auth-token', token).send(token);
-  // sessionStorage.setItem('troov-token', token);
+  generateAccessToken(user, 204, res);
+
+  // const refreshToken = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+  // res.header('troov-token', token).send(token);
+
 
   // Return the user
-  res.send({ id: user._id, name: user.name });
+  // res.send({ token: token, refreshToken: refreshToken }).cookie('troov-token', token, optionsCookie);
+  res.send({ id: user._id, name: user.name })
 })
 
 export default app;

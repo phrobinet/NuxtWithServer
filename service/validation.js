@@ -1,3 +1,4 @@
+import { log } from 'console';
 import Joi from 'joi';
 
 // Register Validation
@@ -38,6 +39,7 @@ const loginValidation = (data) => {
 };
 
 const eventValidation = (data) => {
+  console.log('enter eventValidation');
   const schema = Joi.object({
     title: Joi.string()
               .required()
@@ -52,8 +54,8 @@ const eventValidation = (data) => {
               .required(),
     dateEvent: Joi.string()
               .required()
-
-  })
+  });
+  return schema.validate(data);
 }
 
 export { registerValidation, loginValidation, eventValidation };
