@@ -52,11 +52,12 @@ app.post('/login', async (req, res) => {
 
   // Create and assign a token
   const token = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
+  console.log('token:', token)
   // res.header('auth-token', token).send(token);
-
+  // sessionStorage.setItem('troov-token', token);
 
   // Return the user
-  res.send({ user: user._id, name: user.name });
+  res.send({ id: user._id, name: user.name });
 })
 
 export default app;

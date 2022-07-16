@@ -4,26 +4,71 @@ import { eventValidation } from '~/service/validation';
 
 const app = express();
 
+// Post an event
 app.post('/', async(req, res) => {
   console.log("🦄🦄🦄✨🌈🦄🌍🌏🦄🦄🦄");
   // Validation of data
-  const {error} = eventValidation(req.body);
-  if (error) return res.status(400).send(error.details);
+  // const {error} = eventValidation(req.body);
+  // if (error) return res.status(400).send(error.details);
 
   // Create a new event
   const event = new Event({
     title: req.body.title,
     description: req.body.description,
-    date: req.body.date,
+    dateEvent: req.body.dateEvent,
     location: req.body.location,
-    user: req.body.user,
+    userId: req.body.userId,
   });
   try {
     await event.save();
-    res.send({ event: event._id, title: event.title });
+    res.send(event);
   } catch (error) {
     res.status(500).json({ message: error.message });    
   }
 });
+
+// Get all events
+app.get('/', async(req, res) => {
+  try {
+    const event = await Event.find();
+    res.send(event);
+  } catch (error) {
+    res.status(500).json({ message: error.message });    
+  }
+})
+
+// Get an event
+app.get('/:eventId', async(req, res) => {
+  console.log(req.params.eventId);
+  try {
+    const event = await Event.findById(req.params.eventId);
+    res.send(event);
+  }
+  catch (error) {
+    res.status(500).json({ message: error.message });    
+  }
+})
+
+// Update an event
+app.patch('/:eventId', async(req, res) => {
+  try{
+    console.log(req.body);
+    const updatedEvent = await Event.findByIdAndUpdate({_id: req.params.eventId}, {$set: req.body});
+    res.send(updatedEvent);
+  } catch (error) {
+    res.status(500).json({ message: error.message });    
+  }
+})
+
+// Delete an event
+app.delete('/:eventId', async(req, res) => {
+  try {
+    const event = await Event.findByIdAndDelete(req.params.eventId);
+    res.send(event);
+  }
+  catch (error) {
+    res.status(500).json({ message: error.message });    
+  }
+})
 
 export default app;

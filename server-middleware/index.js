@@ -15,6 +15,6 @@ app.use(express.json());
 
 // Routes
 app.use('/user', auth)
-app.use('/event', auth)
+app.use('/event', event)
 
 export default app;

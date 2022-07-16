@@ -11,7 +11,7 @@ const eventSchema = new mongoose.Schema({
     required: true,
     min: 3
   },
-  date: {
+  dateEvent: {
     type: String,
     required: true
   },
@@ -20,9 +20,13 @@ const eventSchema = new mongoose.Schema({
     required: true,
     min: 3
   },
-  user: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User'
+  userId: {
+    type: String,
+    required: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
   }
 });
 

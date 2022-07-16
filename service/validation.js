@@ -48,9 +48,9 @@ const eventValidation = (data) => {
     location: Joi.string()
                 .required()
                 .min(3),
-    user: Joi.string()
+    userId: Joi.string()
               .required(),
-    date: Joi.string()
+    dateEvent: Joi.string()
               .required()
 
   })
