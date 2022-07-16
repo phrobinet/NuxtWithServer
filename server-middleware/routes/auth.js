@@ -1,6 +1,5 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
 import User from '~/model/User';
 import { registerValidation, loginValidation } from '~/service/validation';
 import { generateAccessToken } from '~/service/tokenService';
@@ -10,7 +9,6 @@ const app = express();
 
 // Register a new user
 app.post('/register', async (req, res) => {
-  console.log("🌍🌏✨🌈🦄");
   // Validation of the data
   const {error} = registerValidation(req.body);
   if (error) return res.status(400).send(error.details);
@@ -40,6 +38,7 @@ app.post('/register', async (req, res) => {
 
 // Login a user
 app.post('/login', async (req, res) => {
+  console.log("entered login");
   // Validation of data
   const {error} = loginValidation(req.body);
   if (error) return res.status(400).send(error.details);
@@ -55,13 +54,14 @@ app.post('/login', async (req, res) => {
   // Create and assign a token
   generateAccessToken(user, 204, res);
 
-  // const refreshToken = jwt.sign({ _id: user._id }, process.env.TOKEN_SECRET);
-  // res.header('troov-token', token).send(token);
-
-
   // Return the user
-  // res.send({ token: token, refreshToken: refreshToken }).cookie('troov-token', token, optionsCookie);
-  res.send({ id: user._id, name: user.name })
+  return res.send({ id: user._id, name: user.name })
+})
+
+// Logout a user
+app.post('/logout', async (req, res) => {
+  res.clearCookie('troov-token');
+  res.send();
 })
 
 export default app;

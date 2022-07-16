@@ -7,6 +7,7 @@ const app = express();
 
 // Post an event
 app.post('/', async(req, res) => {
+
   // Validation of data
   const {error} = eventValidation(req.body);
   if (error) return res.status(400).send(error.details);
@@ -29,6 +30,7 @@ app.post('/', async(req, res) => {
 
 // Get all events
 app.get('/', tokenVerify, async(req, res) => {
+  
   try {
     const event = await Event.find();
     res.send(event);
