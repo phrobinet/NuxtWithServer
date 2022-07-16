@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       dbConnect: process.env.DB_CONNECT,
+      tokenSecret: process.env.TOKEN_SECRET,
     }
   },
 })

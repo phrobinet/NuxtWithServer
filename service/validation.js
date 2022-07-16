@@ -37,4 +37,23 @@ const loginValidation = (data) => {
   return schema.validate(data);
 };
 
-export { registerValidation, loginValidation };
+const eventValidation = (data) => {
+  const schema = Joi.object({
+    title: Joi.string()
+              .required()
+              .min(3),
+    description: Joi.string()
+                    .required()
+                    .min(3),
+    location: Joi.string()
+                .required()
+                .min(3),
+    user: Joi.string()
+              .required(),
+    date: Joi.string()
+              .required()
+
+  })
+}
+
+export { registerValidation, loginValidation, eventValidation };

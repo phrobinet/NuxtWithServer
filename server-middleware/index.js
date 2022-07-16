@@ -1,5 +1,6 @@
 import express from 'express';
 import auth from './routes/auth';
+import event from './routes/event';
 import mongoose from 'mongoose';
 
 const app = express();
@@ -14,5 +15,6 @@ app.use(express.json());
 
 // Routes
 app.use('/user', auth)
+app.use('/event', auth)
 
 export default app;
