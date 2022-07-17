@@ -16,7 +16,7 @@ import { ref } from "vue";
               height="24"
             />
           </div>
-          <div class="label d-inline mx-2">Troov Test</div>
+          <nuxt-link to="/" class="label d-inline mx-2">Troov Test</nuxt-link>
         </div>
         <!-- Nav Item -->
         <button
@@ -33,10 +33,62 @@ import { ref } from "vue";
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Events</a>
+              <nuxt-link to="/event" class="nav-link" aria-current="page"
+                >Events</nuxt-link
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ajouter un event</a>
+              <nuxt-link to="/create" class="nav-link"
+                >Ajouter un event</nuxt-link
+              >
+            </li>
+          </ul>
+          <!-- Dropdown(手機版隱藏) -->
+          <div class="inline-block px-5 d-none d-lg-block">
+            <div class="btn-group">
+              <a
+                class="btn"
+                data-bs-toggle="dropdown"
+                data-bs-display="static"
+                aria-expanded="false"
+              >
+                <span>
+                  <i class="far fa-user"></i>
+                </span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" id="userDropdown">
+                <li>
+                  <div class="dropdown-item">
+                    <span id="userName">User Name</span>
+                    <span class="badge rounded-pill bg-secondary" id="groupName"
+                      >Group Name</span
+                    >
+                  </div>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="javascript:void(0);"
+                    onclick="logout()"
+                  >
+                    Hello<i class="fas fa-sign-out-alt fa-fw"></i> 登出
+                  </a>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="px-3">
+                  <i class="fas fa-code-branch"></i>
+                  <span>ver 0.0.1</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Dropdown(手機版顯示)  -->
+          <ul class="navbar-nav d-block d-lg-none">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">個人服務中心</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">登出</a>
             </li>
           </ul>
         </div>
@@ -59,6 +111,7 @@ import { ref } from "vue";
   font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
   font-size: 20px;
+  text-decoration: none;
 }
 
 .section-nav .nav-link {
@@ -67,6 +120,6 @@ import { ref } from "vue";
 }
 .section-nav .nav-link:hover {
   font-weight: 400;
-  color: red !important;
+  color: red;
 }
 </style>

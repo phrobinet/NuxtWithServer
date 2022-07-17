@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 const tokenVerify = (req, res, next) => {
-  // const token = req.header('troov-token');
+
   const token = req.cookies['troov-token'];
   if (!token) return res.status(401).send('Access denied. No token provided.');
 
@@ -25,7 +25,7 @@ const generateAccessToken = (user, statusCode, res) => {
     httpOnly: true
   };
   
-  res.cookie('troov-token', token, optionsCookie).send({ id: user._id, name: user.name }).status(statusCode);
+  res.cookie('troov-token', {token: token, user: user}, optionsCookie).send({ id: user._id, name: user.name }).status(statusCode);
   return
 }
 

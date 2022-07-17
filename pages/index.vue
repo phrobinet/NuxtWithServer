@@ -1,27 +1,20 @@
 <script setup>
 import { ref, reactive } from "vue";
 
-let events = reactive([]);
+const events = ref([]);
 
-async function getEvents() {
-  let response = await $fetch("/event");
-  console.log("response:", response);
-  return (events = response);
-}
-
-async function sum() {
-  return events.reduce((acc, event) => acc + event.price, 0);
-}
-
+const getUsers = async () => {
+  const data = await $fetch(`/event`);
+  console.log("data:", data);
+  events.value = data;
+};
 onMounted(async () => {
-  getEvents();
+  getUsers();
 });
 </script>
 
 <template>
-  <div>
-    {{ events }}
-  </div>
+  <div>Event: {{ events }}</div>
 </template>
 
 <style scoped></style>
