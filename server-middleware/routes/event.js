@@ -29,8 +29,8 @@ app.post('/', async(req, res) => {
 });
 
 // Get all events
-app.get('/', tokenVerify, async(req, res) => {
-  
+app.get('/', async(req, res) => {
+
   try {
     const event = await Event.find();
     res.send(event);
@@ -51,7 +51,7 @@ app.get('/:eventId', async(req, res) => {
 })
 
 // Update an event
-app.patch('/:eventId', async(req, res) => {
+app.patch('/:eventId', tokenVerify, async(req, res) => {
   // Validation of data
   const {error} = eventValidation(req.body);
   if (error) return res.status(400).send(error.details);
