@@ -2,6 +2,7 @@ import express from 'express';
 import Event from '~/model/Event';
 import { eventValidation } from '~/service/validation';
 import { tokenVerify } from '~/service/tokenService';
+import cookies from 'cookie-parser';
 
 const app = express();
 
@@ -58,7 +59,6 @@ app.patch('/:eventId', tokenVerify, async(req, res) => {
 
   // Update Event
   try{
-    console.log(req.body);
     const updatedEvent = await Event.findByIdAndUpdate({_id: req.params.eventId}, {$set: req.body});
     res.send(updatedEvent);
   } catch (error) {

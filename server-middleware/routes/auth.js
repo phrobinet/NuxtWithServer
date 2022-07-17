@@ -38,7 +38,7 @@ app.post('/register', async (req, res) => {
 
 // Login a user
 app.post('/login', async (req, res) => {
-  console.log("entered login");
+
   // Validation of data
   const {error} = loginValidation(req.body);
   if (error) return res.status(400).send(error.details);

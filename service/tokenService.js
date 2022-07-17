@@ -1,12 +1,12 @@
 import jwt from 'jsonwebtoken';
 
 const tokenVerify = (req, res, next) => {
-
   const token = req.cookies['troov-token'];
+  
   if (!token) return res.status(401).send('Access denied. No token provided.');
 
   try {
-    const verified = jwt.verify(token, process.env.TOKEN_SECRET);
+    const verified = jwt.verify(token.token, process.env.TOKEN_SECRET);
     req.user = verified;
     next();
   } catch (err) {
@@ -24,9 +24,13 @@ const generateAccessToken = (user, statusCode, res) => {
     ),
     httpOnly: true
   };
-  
-  res.cookie('troov-token', {token: token, user: user}, optionsCookie).send({ id: user._id, name: user.name }).status(statusCode);
+  res.cookie('troov-id', user.id);
+  res.cookie('troov-token', {token: token, user: { id: user._id, name: user.name }}, optionsCookie).send({ id: user._id, name: user.name }).status(statusCode);
   return
 }
 
-export { tokenVerify, generateAccessToken };
+const getCookies = (req) => {
+  return cookies = req.cookies['troov-token'];
+}
+
+export { tokenVerify, generateAccessToken, getCookies };

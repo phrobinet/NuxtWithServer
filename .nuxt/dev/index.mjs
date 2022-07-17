@@ -347,7 +347,6 @@ app$2.post("/register", async (req, res) => {
   }
 });
 app$2.post("/login", async (req, res) => {
-  console.log("entered login");
   const { error } = loginValidation(req.body);
   if (error)
     return res.status(400).send(error.details);
@@ -406,7 +405,6 @@ app$1.patch("/:eventId", tokenVerify, async (req, res) => {
   if (error)
     return res.status(400).send(error.details);
   try {
-    console.log(req.body);
     const updatedEvent = await Event.findByIdAndUpdate({ _id: req.params.eventId }, { $set: req.body });
     res.send(updatedEvent);
   } catch (error2) {

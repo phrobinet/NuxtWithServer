@@ -1,37 +1,58 @@
-<script setup lang="ts">
+<script setup>
 import { ref, reactive } from "vue";
 import axios from "axios";
-const cookie = useCookie("troov-id");
 
 const router = useRouter();
-
+const route = useRoute();
+console.log(route.params.id);
+const event = ref([]);
 const errorMessage = ref(null);
-const event = reactive({
-  title: "",
-  description: "",
-  dateEvent: "",
-  location: "",
-});
 
-const createEvent = async () => {
+const getOneEvent = () => {
   axios
-    .post("/event", {
-      title: event.title,
-      description: event.description,
-      dateEvent: event.dateEvent,
-      location: event.location,
-      userId: cookie.value,
-    })
+    .get(`/event/${route.params.id}`)
     .then((response) => {
       console.log(response);
-      event.title = "";
-      event.description = "";
-      event.dateEvent = "";
-      event.location = "";
+      event.value = response.data;
+    })
+    .catch((error) => {
+      console.error(error.response.data);
+      errorMessage.value = error.response.data;
+    });
+};
+getOneEvent();
+
+const deleteEvent = () => {
+  axios
+    .delete(`/event/${route.params.id}`)
+    .then((response) => {
+      console.log(response);
       router.push("/event");
     })
     .catch((error) => {
       console.error(error.response.data);
+      errorMessage.value = error.response.data;
+    });
+};
+
+const updateEvent = async () => {
+  axios
+    .patch(`/event/${route.params.id}`, {
+      title: event.value.title,
+      description: event.value.description,
+      dateEvent: event.value.dateEvent,
+      location: event.value.location,
+      userId: "1234",
+    })
+    .then((response) => {
+      console.log(response);
+      event.value.title = "";
+      event.value.description = "";
+      event.value.dateEvent = "";
+      event.value.location = "";
+      router.push("/event");
+    })
+    .catch((error) => {
       errorMessage.value = error.response.data;
     });
 };
@@ -40,7 +61,7 @@ const createEvent = async () => {
 <template>
   <div class="container">
     <div class="text-center my-5">
-      <h1>Créer un événement</h1>
+      <h1>Modifier votre événement</h1>
       <hr />
     </div>
     <div class="container mt-5 pt-5">
@@ -113,9 +134,15 @@ const createEvent = async () => {
                 <p class="error-message text-center" v-if="errorMessage">
                   {{ errorMessage }}
                 </p>
-                <div class="text-center mt-3">
-                  <button @click.prevent="createEvent" class="btn btn-primary">
-                    Envoyer
+                <div class="text-center mt-3 mr-2">
+                  <button @click.prevent="updateEvent" class="btn btn-primary">
+                    Modifier
+                  </button>
+                  <button
+                    @click.prevent="deleteEvent"
+                    class="btn btn-outline-danger"
+                  >
+                    Supprimer
                   </button>
                   <nuxt-link class="nav-link" to="/user/login"
                     >Vous avez déjà un compte ?</nuxt-link

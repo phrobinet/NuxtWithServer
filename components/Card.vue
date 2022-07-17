@@ -1,10 +1,14 @@
-<script setup lang="ts">
+<script setup>
+import { ref } from "vue";
+const cookie = useCookie("troov-id");
 const props = defineProps({
   data: {
     type: Object,
     required: true,
   },
 });
+
+const event = ref(props.data);
 </script>
 
 <template>
@@ -19,12 +23,12 @@ const props = defineProps({
         <p>Lieu: {{ data.location }}</p>
       </div>
       <nuxt-link
-        to="'/modification'"
+        v-if="cookie === data.userId"
+        :to="`/update/${event._id}`"
         class="btn btn-outline-warning rounded-pill float-end"
-        >Modifier</nuxt-link
       >
+        Modifier
+      </nuxt-link>
     </div>
   </div>
 </template>
-
-<style scoped></style>
