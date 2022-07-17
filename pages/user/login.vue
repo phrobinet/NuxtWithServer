@@ -1,12 +1,39 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 import axios from "axios";
+
+const router = useRouter();
+const user = reactive({
+  email: "",
+  password: "",
+});
+
+const errorMessage = ref(null);
+
+const login = async () => {
+  axios
+    .post("/user/login", {
+      email: user.email,
+      password: user.password,
+    })
+    .then((response) => {
+      console.log(response);
+      user.email = "";
+      user.password = "";
+      router.push("/event");
+    })
+    .catch((error) => {
+      console.error(error.response.data);
+      errorMessage.value = error.response.data;
+    });
+  console.log(user.email);
+};
 </script>
 
 <template>
   <div class="container">
     <div class="text-center my-5">
-      <h1>Inscription</h1>
+      <h1>Connexion</h1>
       <hr />
     </div>
     <div class="container mt-5 pt-5">
@@ -28,19 +55,28 @@ import axios from "axios";
                   />
                 </svg>
               </div>
-              <form action="">
+              <form>
                 <input
                   type="text"
                   class="form-control my-4 py-2"
                   placeholder="E-mail"
+                  required
+                  v-model="user.email"
                 />
                 <input
                   type="password"
                   class="form-control my-4 py-2"
                   placeholder="Mot de passe"
+                  required
+                  v-model="user.password"
                 />
+                <p class="error-message text-center" v-if="errorMessage">
+                  {{ errorMessage }}
+                </p>
                 <div class="text-center mt-3">
-                  <button class="btn btn-primary">Envoyer</button>
+                  <button @click.prevent="login" class="btn btn-primary">
+                    Envoyer
+                  </button>
                   <nuxt-link class="nav-link" to="/user/register"
                     >Vous n'avez pas encore de compte ?</nuxt-link
                   >
@@ -54,4 +90,10 @@ import axios from "axios";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.error-message {
+  color: red;
+  font-style: italic;
+  font-size: small;
+}
+</style>

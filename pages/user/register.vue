@@ -1,5 +1,36 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, reactive } from "vue";
+import axios from "axios";
+
+const router = useRouter();
+
+const user = reactive({
+  name: "",
+  email: "",
+  password: "",
+});
+
+const errorMessage = ref(null);
+
+const register = () => {
+  axios
+    .post("/user/register", {
+      name: user.name,
+      email: user.email,
+      password: user.password,
+    })
+    .then((response) => {
+      console.log(response);
+      user.name = "";
+      user.email = "";
+      user.password = "";
+      router.push("/user/login");
+    })
+    .catch((error) => {
+      console.error(error.response.data);
+      errorMessage.value = error.response.data;
+    });
+};
 </script>
 
 <template>
@@ -32,24 +63,27 @@ import { ref } from "vue";
                   type="text"
                   class="form-control my-4 py-2"
                   placeholder="Nom d'utilisateur"
+                  v-model="user.name"
                 />
                 <input
                   type="text"
                   class="form-control my-4 py-2"
                   placeholder="E-mail"
+                  v-model="user.email"
                 />
                 <input
                   type="password"
                   class="form-control my-4 py-2"
                   placeholder="Mot de passe"
+                  v-model="user.password"
                 />
-                <input
-                  type="password"
-                  class="form-control my-4 py-2"
-                  placeholder="Confirmation mot de passe"
-                />
+                <p class="error-message text-center" v-if="errorMessage">
+                  {{ errorMessage }}
+                </p>
                 <div class="text-center mt-3">
-                  <button class="btn btn-primary">Envoyer</button>
+                  <button @click.prevent="register" class="btn btn-primary">
+                    Envoyer
+                  </button>
                   <nuxt-link class="nav-link" to="/user/login"
                     >Vous avez déjà un compte ?</nuxt-link
                   >
@@ -63,4 +97,10 @@ import { ref } from "vue";
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.error-message {
+  color: red;
+  font-style: italic;
+  font-size: small;
+}
+</style>
