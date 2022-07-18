@@ -361,6 +361,7 @@ app$2.post("/login", async (req, res) => {
 });
 app$2.post("/logout", async (req, res) => {
   res.clearCookie("troov-token");
+  res.clearCookie("troov-id");
   res.send();
 });
 const auth = app$2;

@@ -66,50 +66,32 @@ const createEvent = async () => {
                 </svg>
               </div>
               <form>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Title"
-                    v-model="event.title"
-                  />
-                  <label for="floatingInput">Titre de l'événement</label>
-                </div>
+                <FormInput
+                  v-model="event.title"
+                  type="text"
+                  label="Titre"
+                  id="title"
+                />
 
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Paris"
-                    v-model="event.location"
-                  />
-                  <label for="floatingInput">Ou se situe l'événement</label>
-                </div>
+                <FormInput
+                  v-model="event.location"
+                  type="text"
+                  label="Où se situe l'événement"
+                  id="location"
+                />
 
-                <div class="form-floating mb-3">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Paris"
-                    v-model="event.dateEvent"
-                  />
-                  <label for="floatingInput"
-                    >Quelle est la date de l'événement</label
-                  >
-                </div>
+                <FormInput
+                  v-model="event.dateEvent"
+                  type="date"
+                  label="Quelle est la date de l'événement"
+                  id="dateEvent"
+                />
+                <FormTextarea
+                  v-model="event.description"
+                  label="Description"
+                  id="description"
+                />
 
-                <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea"
-                    v-model="event.description"
-                  ></textarea>
-                  <label for="floatingTextarea">Description</label>
-                </div>
                 <p class="error-message text-center" v-if="errorMessage">
                   {{ errorMessage }}
                 </p>
@@ -123,6 +105,9 @@ const createEvent = async () => {
                 </div>
               </form>
             </div>
+            <pre>
+              {{ event }}
+            </pre>
           </div>
         </div>
       </div>

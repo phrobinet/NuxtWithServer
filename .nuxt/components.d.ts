@@ -2,7 +2,10 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default'],
+    'Nav': typeof import("../components/Nav.vue")['default'],
     'NavBar': typeof import("../components/NavBar.vue")['default'],
+    'FormInput': typeof import("../components/Form/Input.vue")['default'],
+    'FormTextarea': typeof import("../components/Form/Textarea.vue")['default'],
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
@@ -11,7 +14,10 @@ declare module 'vue' {
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default'],
     'NuxtLoadingIndicator': typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
     'LazyCard': typeof import("../components/Card.vue")['default'],
+    'LazyNav': typeof import("../components/Nav.vue")['default'],
     'LazyNavBar': typeof import("../components/NavBar.vue")['default'],
+    'LazyFormInput': typeof import("../components/Form/Input.vue")['default'],
+    'LazyFormTextarea': typeof import("../components/Form/Textarea.vue")['default'],
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default'],
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default'],
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default'],
@@ -22,7 +28,10 @@ declare module 'vue' {
   }
 }
 export const Card: typeof import("../components/Card.vue")['default']
+export const Nav: typeof import("../components/Nav.vue")['default']
 export const NavBar: typeof import("../components/NavBar.vue")['default']
+export const FormInput: typeof import("../components/Form/Input.vue")['default']
+export const FormTextarea: typeof import("../components/Form/Textarea.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -31,7 +40,10 @@ export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/com
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const NuxtLoadingIndicator: typeof import("../node_modules/nuxt/dist/app/components/nuxt-loading-indicator")['default']
 export const LazyCard: typeof import("../components/Card.vue")['default']
+export const LazyNav: typeof import("../components/Nav.vue")['default']
 export const LazyNavBar: typeof import("../components/NavBar.vue")['default']
+export const LazyFormInput: typeof import("../components/Form/Input.vue")['default']
+export const LazyFormTextarea: typeof import("../components/Form/Textarea.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']

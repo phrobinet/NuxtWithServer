@@ -61,6 +61,7 @@ app.post('/login', async (req, res) => {
 // Logout a user
 app.post('/logout', async (req, res) => {
   res.clearCookie('troov-token');
+  res.clearCookie('troov-id');
   res.send();
 })
 

@@ -58,25 +58,26 @@ const register = () => {
                   />
                 </svg>
               </div>
-              <form action="">
-                <input
-                  type="text"
-                  class="form-control my-4 py-2"
-                  placeholder="Nom d'utilisateur"
+              <form class="my-4 py-2">
+                <FormInput
                   v-model="user.name"
-                />
-                <input
                   type="text"
-                  class="form-control my-4 py-2"
-                  placeholder="E-mail"
+                  label="Nom d'utilisateur"
+                  id="username"
+                />
+                <FormInput
                   v-model="user.email"
+                  type="text"
+                  label="E-mail"
+                  id="email"
                 />
-                <input
-                  type="password"
-                  class="form-control my-4 py-2"
-                  placeholder="Mot de passe"
+                <FormInput
                   v-model="user.password"
+                  type="password"
+                  label="Mot de passe"
+                  id="password"
                 />
+
                 <p class="error-message text-center" v-if="errorMessage">
                   {{ errorMessage }}
                 </p>

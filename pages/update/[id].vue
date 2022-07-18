@@ -64,7 +64,7 @@ const updateEvent = async () => {
       <h1>Modifier votre événement</h1>
       <hr />
     </div>
-    <div class="container mt-5 pt-5">
+    <div class="container my-5 py-5">
       <div class="row">
         <div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto">
           <div class="card border-0 shadow">
@@ -87,54 +87,37 @@ const updateEvent = async () => {
                 </svg>
               </div>
               <form>
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Title"
-                    v-model="event.title"
-                  />
-                  <label for="floatingInput">Titre de l'événement</label>
-                </div>
+                <FormInput
+                  v-model="event.title"
+                  label="Titre"
+                  id="title"
+                  type="text"
+                />
 
-                <div class="form-floating mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Paris"
-                    v-model="event.location"
-                  />
-                  <label for="floatingInput">Ou se situe l'événement</label>
-                </div>
+                <FormInput
+                  v-model="event.location"
+                  label="Où se situe l'événement"
+                  id="location"
+                  type="text"
+                />
 
-                <div class="form-floating mb-3">
-                  <input
-                    type="date"
-                    class="form-control"
-                    id="floatingInput"
-                    placeholder="Paris"
-                    v-model="event.dateEvent"
-                  />
-                  <label for="floatingInput"
-                    >Quelle est la date de l'événement</label
-                  >
-                </div>
+                <FormInput
+                  v-model="event.dateEvent"
+                  label="Quelle est la date de l'événement"
+                  id="dateEvent"
+                  type="date"
+                />
 
-                <div class="form-floating">
-                  <textarea
-                    class="form-control"
-                    placeholder="Leave a comment here"
-                    id="floatingTextarea"
-                    v-model="event.description"
-                  ></textarea>
-                  <label for="floatingTextarea">Description</label>
-                </div>
+                <FormTextarea
+                  v-model="event.description"
+                  label="Description"
+                  id="description"
+                />
+
                 <p class="error-message text-center" v-if="errorMessage">
                   {{ errorMessage }}
                 </p>
-                <div class="text-center mt-3 mr-2">
+                <!-- <div class="text-center mt-3 mr-2">
                   <button @click.prevent="updateEvent" class="btn btn-primary">
                     Modifier
                   </button>
@@ -147,6 +130,20 @@ const updateEvent = async () => {
                   <nuxt-link class="nav-link" to="/user/login"
                     >Vous avez déjà un compte ?</nuxt-link
                   >
+                </div> -->
+                <div class="text-center">
+                  <div
+                    class="btn-group"
+                    role="group"
+                    aria-label="Basic mixed styles example"
+                  >
+                    <button type="button" class="btn btn-success">
+                      Modifier
+                    </button>
+                    <button type="button" class="btn btn-danger">
+                      Supprimer
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
