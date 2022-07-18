@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { useProfileStore } from "../store/profileStore";
 import axios from "axios";
+
+const profileStore = useProfileStore();
 
 const logout = () => {
   axios.post("/user/logout");
+  profileStore.toggleIsLoggedIn();
 };
 </script>
 
@@ -38,12 +41,12 @@ const logout = () => {
             </li>
             <li class="nav-item">
               <nuxt-link to="/create" class="nav-link"
-                >Ajouter un event</nuxt-link
+                >Créers un événement</nuxt-link
               >
             </li>
           </ul>
 
-          <div class="form-inline my-2 my-lg-0">
+          <div v-if="!profileStore.isLoggedIn" class="form-inline my-2 my-lg-0">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <nuxt-link to="/user/login" class="nav-link"
@@ -58,7 +61,7 @@ const logout = () => {
             </ul>
           </div>
 
-          <div class="form-inline my-2 my-lg-0">
+          <div v-else class="form-inline my-2 my-lg-0">
             <div class="navbar-nav me-auto">
               <p @click="logout" class="nav-item">
                 <nuxt-link to="/user/login" class="nav-link">Logout</nuxt-link>
@@ -94,6 +97,5 @@ const logout = () => {
 }
 .section-nav .nav-link:hover {
   font-weight: 400;
-  color: red;
 }
 </style>

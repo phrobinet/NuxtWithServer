@@ -1,4 +1,3 @@
-import { log } from 'console';
 import Joi from 'joi';
 
 // Register Validation

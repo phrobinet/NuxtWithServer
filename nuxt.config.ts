@@ -23,5 +23,8 @@ export default defineNuxtConfig({
       src: "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       }
     ],
-  }
+  },
+  buildModules: [
+    '@pinia/nuxt',
+  ],
 })

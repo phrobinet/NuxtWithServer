@@ -129,9 +129,9 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /pages/update/[id].vue ($id_6aIXS57ME8)
 // - /pages/user/login.vue ($id_mac5qKoyz4)
 // - /pages/user/register.vue ($id_ublemiS0hw)
-// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_6btoGdWLJh)
 // - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_DFcXpE295m)
 // - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_6btoGdWLJh)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_uQ1ND2iuUo)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_FMi1dBhUQk)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_vC10oUHchO)
@@ -256,8 +256,8 @@ import("file:///Users/philipperobinet/Documents/NuxtJS/troov/node_modules/ufo/di
 // - /pages/update/[id].vue ($id_6aIXS57ME8)
 // - /pages/user/login.vue ($id_mac5qKoyz4)
 // - /pages/user/register.vue ($id_ublemiS0hw)
-// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_6btoGdWLJh)
 // - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_6btoGdWLJh)
 // - /node_modules/nuxt/dist/app/components/layout.mjs ($id_OQA4gz7rLc)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/nuxt.mjs ($id_4GnUEZ7ifE)
@@ -1271,10 +1271,12 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true
 // - /pages/404.vue?macro=true ($id_wt0iNdA5Wu)
 // - /pages/create.vue?macro=true ($id_2ZhLjEmLe5)
 // - /components/Card.vue ($id_JDqv8pOB1u)
+// - /pages/index.vue?macro=true ($id_XdcCQB7w7V)
 // - /pages/user/login.vue?macro=true ($id_hCqukOuM1U)
 // - /pages/user/register.vue?macro=true ($id_m7QQwFqhrZ)
 // - /pages/404.vue ($id_WR0M2zDvVc)
 // - /pages/create.vue ($id_kQLTPFB8yW)
+// - /pages/index.vue ($id_zKWOlz8EPO)
 // - /pages/user/login.vue ($id_mac5qKoyz4)
 // - /pages/user/register.vue ($id_ublemiS0hw)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_uQ1ND2iuUo)
@@ -1507,6 +1509,7 @@ const $id_89b97MJmrE = async function (global, module, exports, __vite_ssr_expor
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_5vEgA2Fgrh)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_omUDQe4IGe)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_oJCXe6nyyh)
+// - /node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs ($id_i9ItelNnNP)
 // --------------------
 const $id_EviSavUWra = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/plugins/preload.server.mjs");
@@ -1519,12 +1522,15 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/router.mjs");
 
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs");
+
 __vite_ssr_exports__.default = [
   __vite_ssr_import_0__.default,
   __vite_ssr_import_1__.default,
   __vite_ssr_import_2__.default,
   __vite_ssr_import_3__.default,
-  __vite_ssr_import_4__.default
+  __vite_ssr_import_4__.default,
+  __vite_ssr_import_5__.default
 ];
 }
 
@@ -2972,7 +2978,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_FormTextarea = __vite_ssr_import_2__.default;
   const _component_nuxt_link = __vite_ssr_import_3__.default;
-  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-40a374b5><div class="text-center my-5" data-v-40a374b5><h1 data-v-40a374b5>Cr\xE9er un \xE9v\xE9nement</h1><hr data-v-40a374b5></div><div class="container mt-5 pt-5" data-v-40a374b5><div class="row" data-v-40a374b5><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-40a374b5><div class="card border-0 shadow" data-v-40a374b5><div class="card-body" data-v-40a374b5><div class="text-center mb-5" data-v-40a374b5><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16" data-v-40a374b5><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" data-v-40a374b5></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" data-v-40a374b5></path></svg></div><form data-v-40a374b5>`);
+  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-40a374b5><div class="text-center my-5" data-v-40a374b5><h1 data-v-40a374b5>Cr\xE9er un \xE9v\xE9nement</h1><hr data-v-40a374b5></div><div class="container my-5 pt-5" data-v-40a374b5><div class="row" data-v-40a374b5><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-40a374b5><div class="card border-0 shadow" data-v-40a374b5><div class="card-body" data-v-40a374b5><div class="text-center mb-5" data-v-40a374b5><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16" data-v-40a374b5><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" data-v-40a374b5></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" data-v-40a374b5></path></svg></div><form data-v-40a374b5>`);
   _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.event.title,
     "onUpdate:modelValue": ($event) => $setup.event.title = $event,
@@ -3021,8 +3027,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     }),
     _: 1
   }, _parent));
-  _push(`</div></form></div><pre data-v-40a374b5>              ${__vite_ssr_import_8__.ssrInterpolate($setup.event)}
-            </pre></div></div></div></div></div>`);
+  _push(`</div></form></div></div></div></div></div></div>`);
 }
 const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/create.vue?vue&type=style&index=0&scoped=true&lang.css");
 
@@ -3323,8 +3328,8 @@ const _sfc_main = {
   setup(__props, { expose }) {
   expose();
 
-// const { data: datas, error } = await useFetch("/event");
 let datas = __vite_ssr_import_2__.ref([]);
+
 async function getUser() {
   try {
     const response = await __vite_ssr_import_1__.default.get("/event");
@@ -3480,64 +3485,72 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // Parents: 
 // - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/routes.mjs ($id_NYS6RIyZKQ)
 // Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_6yHtfHy3cx)
 // - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
+// - /pages/index.vue?vue&type=style&index=0&scoped=true&lang.css ($id_SqnmXgZXcZ)
 // - /@id/plugin-vue:export-helper ($id_u7hjwQB3Fl)
 // --------------------
 const $id_XdcCQB7w7V = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
+const _sfc_main = {}
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-
-
-const _sfc_main = {
-  __name: 'index',
-  setup(__props, { expose }) {
-  expose();
-
-const events = __vite_ssr_import_1__.ref([]);
-
-const getUsers = async () => {
-  const data = await $fetch(`/event`);
-  console.log("data:", data);
-  events.value = data;
-};
-__vite_ssr_import_0__.onMounted(async () => {
-  getUsers();
-});
-
-const __returned__ = { events, getUsers, ref: __vite_ssr_import_1__.ref, reactive: __vite_ssr_import_1__.reactive }
-Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
-return __returned__
-}
-
-}
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(_attrs)
-  }>Event: ${
-    __vite_ssr_import_2__.ssrInterpolate($setup.events)
-  }</div>`)
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_link = __vite_ssr_import_0__.default
+
+  _push(`<!--[--><div data-v-2a183b29><div class="headImg" style="${__vite_ssr_import_2__.ssrRenderStyle({"background-image":"url('../assets/img/bg.jpeg')"})}" data-v-2a183b29><div class="head-overlay d-flex justify-content-center align-items-center" data-v-2a183b29><div class="singleCol container text-center" data-v-2a183b29><h1 data-v-2a183b29>Bienvenue sur Troov~Test</h1><p class="lead" data-v-2a183b29><strong data-v-2a183b29> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet dolore praesentium quia accusamus, fugit officia nam minima cum totam nihil inventore. </strong></p>`)
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_nuxt_link, {
+    to: "/event",
+    class: "btn btn-outline-light"
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`<strong data-v-2a183b29${_scopeId}>Nos évenements</strong>`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createVNode("strong", null, "Nos évenements")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</div></div></div></div><main data-v-2a183b29><div class="darkBG py-5" data-v-2a183b29><div class="container singleCol" data-v-2a183b29><p class="lead" data-v-2a183b29> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore ex ratione accusamus accusantium odio consequatur! Asperiores reprehenderit voluptates, molestias deserunt facilis iusto voluptate. Velit dignissimos sed ipsa illo laudantium? </p></div></div><div class="container" data-v-2a183b29><div class="row py-4" data-v-2a183b29><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div></div></div></main><!--]-->`)
 }
 
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/pages/index.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/philipperobinet/Documents/NuxtJS/troov/pages/index.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/philipperobinet/Documents/NuxtJS/troov/pages/index.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
+}
+
+
+// --------------------
+// Request: /pages/index.vue?vue&type=style&index=0&scoped=true&lang.css
+// Parents: 
+// - /pages/index.vue?macro=true ($id_XdcCQB7w7V)
+// - /pages/index.vue ($id_zKWOlz8EPO)
+// Dependencies: 
+
+// --------------------
+const $id_SqnmXgZXcZ = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "\n.headImg[data-v-2a183b29] {\n  background-size: cover;\n  min-height: 80vh;\n  position: relative;\n  color: white;\n}\n.head-overlay[data-v-2a183b29] {\n  position: absolute;\n  height: 100%;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.4);\n}\nh1[data-v-2a183b29] {\n  font-size: 3rem;\n}\n.singleCol[data-v-2a183b29] {\n  margin: auto;\n  max-width: 750px;\n}\n.darkBG[data-v-2a183b29] {\n  background-color: #363636;\n  color: white;\n}\n";
 }
 
 
@@ -3575,7 +3588,6 @@ const _sfc_main = {
 
 const router = __vite_ssr_import_0__.useRouter();
 const route = __vite_ssr_import_0__.useRoute();
-console.log(route.params.id);
 const event = __vite_ssr_import_3__.ref([]);
 const errorMessage = __vite_ssr_import_3__.ref(null);
 
@@ -3583,7 +3595,6 @@ const getOneEvent = () => {
   __vite_ssr_import_4__.default
     .get(`/event/${route.params.id}`)
     .then((response) => {
-      console.log(response);
       event.value = response.data;
     })
     .catch((error) => {
@@ -3613,7 +3624,7 @@ const updateEvent = async () => {
       description: event.value.description,
       dateEvent: event.value.dateEvent,
       location: event.value.location,
-      userId: "1234",
+      userId: event.value.userId,
     })
     .then((response) => {
       console.log(response);
@@ -3628,7 +3639,7 @@ const updateEvent = async () => {
     });
 };
 
-const __returned__ = { router, route, event, errorMessage, getOneEvent, deleteEvent, updateEvent, ref: __vite_ssr_import_3__.ref, reactive: __vite_ssr_import_3__.reactive, axios: __vite_ssr_import_4__.default }
+const __returned__ = { router, route, event, errorMessage, getOneEvent, deleteEvent, updateEvent, ref: __vite_ssr_import_3__.ref, axios: __vite_ssr_import_4__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -3676,20 +3687,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   } else {
     _push(`<!---->`)
   }
-  _push(`<!-- <div class="text-center mt-3 mr-2">
-                  <button @click.prevent="updateEvent" class="btn btn-primary">
-                    Modifier
-                  </button>
-                  <button
-                    @click.prevent="deleteEvent"
-                    class="btn btn-outline-danger"
-                  >
-                    Supprimer
-                  </button>
-                  <nuxt-link class="nav-link" to="/user/login"
-                    >Vous avez déjà un compte ?</nuxt-link
-                  >
-                </div> --><div class="text-center" data-v-c8a938f8><div class="btn-group" role="group" aria-label="Basic mixed styles example" data-v-c8a938f8><button type="button" class="btn btn-success" data-v-c8a938f8> Modifier </button><button type="button" class="btn btn-danger" data-v-c8a938f8> Supprimer </button></div></div></form></div></div></div></div></div></div>`)
+  _push(`<div class="text-center" data-v-c8a938f8><div class="btn-group" role="group" aria-label="Basic mixed styles example" data-v-c8a938f8><button type="button" class="btn btn-success" data-v-c8a938f8> Modifier </button><button type="button" class="btn btn-danger" data-v-c8a938f8> Supprimer </button></div></div></form></div></div></div></div></div></div>`)
 }
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/pages/update/[id].vue?vue&type=style&index=0&scoped=true&lang.css");
@@ -3733,6 +3731,7 @@ __vite_ssr_exports__.default = "\n.error-message[data-v-c8a938f8] {\n  color: re
 // - /components/Form/Input.vue ($id_u6x9vuREvZ)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_6yHtfHy3cx)
 // - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
+// - /store/profileStore.js ($id_2d5ML4HenY)
 // - /node_modules/axios/index.js ($id_mg2sFjNRNK)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
 // - /pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css ($id_tbyNOAyVRG)
@@ -3749,54 +3748,56 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/axios/index.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/profileStore.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/axios/index.js");
 
 const _sfc_main = /* @__PURE__ */ __vite_ssr_import_3__.defineComponent({
   __name: "login",
   setup(__props, { expose }) {
     expose();
     const router = __vite_ssr_import_0__.useRouter();
+    const profileStore = __vite_ssr_import_5__.useProfileStore();
     const user = __vite_ssr_import_4__.reactive({
       email: "",
       password: ""
     });
     const errorMessage = __vite_ssr_import_4__.ref(null);
     const login = async () => {
-      __vite_ssr_import_5__.default.post("/user/login", {
+      __vite_ssr_import_6__.default.post("/user/login", {
         email: user.email,
         password: user.password
-      }).then((response) => {
-        console.log(response);
+      }).then(() => {
         user.email = "";
         user.password = "";
+        profileStore.isLoggedIn = true;
         router.push("/event");
       }).catch((error) => {
-        console.error(error.response.data);
+        console.error("error login: ", error.response.data);
         errorMessage.value = error.response.data;
       });
-      console.log(user.email);
     };
-    const __returned__ = { router, user, errorMessage, login };
+    const __returned__ = { router, profileStore, user, errorMessage, login };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
   }
 });
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_nuxt_link = __vite_ssr_import_2__.default;
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-802e0a44><div class="text-center my-5" data-v-802e0a44><h1 data-v-802e0a44>Connexion</h1><hr data-v-802e0a44></div><div class="container mt-5 pt-5" data-v-802e0a44><div class="row" data-v-802e0a44><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-802e0a44><div class="card border-0 shadow" data-v-802e0a44><div class="card-body" data-v-802e0a44><div class="text-center" data-v-802e0a44><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-802e0a44><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-802e0a44></path></svg></div><form data-v-802e0a44>`);
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
+  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-802e0a44><div class="text-center my-5" data-v-802e0a44><h1 data-v-802e0a44>Connexion</h1><hr data-v-802e0a44></div><div class="container my-5 pt-5" data-v-802e0a44><div class="row" data-v-802e0a44><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-802e0a44><div class="card border-0 shadow" data-v-802e0a44><div class="card-body" data-v-802e0a44><div class="text-center" data-v-802e0a44><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-802e0a44><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-802e0a44></path></svg></div><form data-v-802e0a44>`);
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.email,
     "onUpdate:modelValue": ($event) => $setup.user.email = $event,
     label: "Email",
     type: "text",
     id: "email"
   }, null, _parent));
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.password,
     "onUpdate:modelValue": ($event) => $setup.user.password = $event,
     label: "Mot de passe",
@@ -3804,21 +3805,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     id: "password"
   }, null, _parent));
   if ($setup.errorMessage) {
-    _push(`<p class="error-message text-center" data-v-802e0a44>${__vite_ssr_import_7__.ssrInterpolate($setup.errorMessage)}</p>`);
+    _push(`<p class="error-message text-center" data-v-802e0a44>${__vite_ssr_import_8__.ssrInterpolate($setup.errorMessage)}</p>`);
   } else {
     _push(`<!---->`);
   }
   _push(`<div class="text-center mt-3" data-v-802e0a44><button class="btn btn-primary" data-v-802e0a44> Envoyer </button>`);
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_nuxt_link, {
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_nuxt_link, {
     class: "nav-link",
     to: "/user/register"
   }, {
-    default: __vite_ssr_import_6__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_7__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`Vous n&#39;avez pas encore de compte ?`);
       } else {
         return [
-          __vite_ssr_import_6__.createTextVNode("Vous n'avez pas encore de compte ?")
+          __vite_ssr_import_7__.createTextVNode("Vous n'avez pas encore de compte ?")
         ];
       }
     }),
@@ -3826,23 +3827,77 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, _parent));
   _push(`</div></form></div></div></div></div></div></div>`);
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext();
+  const ssrContext = __vite_ssr_import_10__.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/user/login.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_10__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-802e0a44"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/pages/user/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-802e0a44"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/pages/user/login.vue"]]);
 
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
+
+
+// --------------------
+// Request: /store/profileStore.js
+// Parents: 
+// - /pages/user/login.vue?macro=true ($id_hCqukOuM1U)
+// - /pages/user/login.vue ($id_mac5qKoyz4)
+// - /components/Nav.vue ($id_mEigpq54S5)
+// Dependencies: 
+// - /node_modules/pinia/dist/pinia.mjs ($id_sZIGJFdlmr)
+// --------------------
+const $id_2d5ML4HenY = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/pinia/dist/pinia.mjs");
+
+
+const useProfileStore = __vite_ssr_import_0__.defineStore('profile', {
+  state: () => {
+    return {
+      isLoggedIn: false,
+    }
+  },
+
+  actions: {
+    toggleIsLoggedIn() {
+      console.log('toggleIsLoggedIn: ', this.state.isLoggedIn);
+      this.state.isLoggedIn = !this.state.isLoggedIn;
+    }
+  }
+})
+Object.defineProperty(__vite_ssr_exports__, "useProfileStore", { enumerable: true, configurable: true, get(){ return useProfileStore }});;
+}
+
+
+// --------------------
+// Request: /node_modules/pinia/dist/pinia.mjs
+// Parents: 
+// - /store/profileStore.js ($id_2d5ML4HenY)
+// - /node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs ($id_i9ItelNnNP)
+// - /node_modules/@pinia/nuxt/dist/runtime/composables.mjs ($id_Z1toVhSsqJ)
+// Dependencies: 
+
+// --------------------
+const $id_sZIGJFdlmr = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
+import("file:///Users/philipperobinet/Documents/NuxtJS/troov/node_modules/pinia/dist/pinia.mjs")
+  .then(r => {
+    if (r.default && r.default.__esModule)
+      r = r.default
+    exports.default = r.default
+    ssrExportAll(r)
+  })
+  .catch(e => {
+    console.error(e)
+    throw new Error("[vite dev] Error loading external \"/Users/philipperobinet/Documents/NuxtJS/troov/node_modules/pinia/dist/pinia.mjs\".")
+  })
 
 
 // --------------------
@@ -3924,7 +3979,7 @@ const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/serve
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_nuxt_link = __vite_ssr_import_2__.default;
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-f11a6d84><div class="text-center my-5" data-v-f11a6d84><h1 data-v-f11a6d84>Inscription</h1><hr data-v-f11a6d84></div><div class="container mt-5 pt-5" data-v-f11a6d84><div class="row" data-v-f11a6d84><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-f11a6d84><div class="card border-0 shadow" data-v-f11a6d84><div class="card-body" data-v-f11a6d84><div class="text-center" data-v-f11a6d84><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-f11a6d84><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-f11a6d84></path></svg></div><form class="my-4 py-2" data-v-f11a6d84>`);
+  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-f11a6d84><div class="text-center my-5" data-v-f11a6d84><h1 data-v-f11a6d84>Inscription</h1><hr data-v-f11a6d84></div><div class="container my-5 pt-5" data-v-f11a6d84><div class="row" data-v-f11a6d84><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-f11a6d84><div class="card border-0 shadow" data-v-f11a6d84><div class="card-body" data-v-f11a6d84><div class="text-center" data-v-f11a6d84><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-f11a6d84><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-f11a6d84></path></svg></div><form class="my-4 py-2" data-v-f11a6d84>`);
   _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.name,
     "onUpdate:modelValue": ($event) => $setup.user.name = $event,
@@ -4139,7 +4194,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_FormTextarea = __vite_ssr_import_2__.default;
   const _component_nuxt_link = __vite_ssr_import_3__.default;
-  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-40a374b5><div class="text-center my-5" data-v-40a374b5><h1 data-v-40a374b5>Cr\xE9er un \xE9v\xE9nement</h1><hr data-v-40a374b5></div><div class="container mt-5 pt-5" data-v-40a374b5><div class="row" data-v-40a374b5><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-40a374b5><div class="card border-0 shadow" data-v-40a374b5><div class="card-body" data-v-40a374b5><div class="text-center mb-5" data-v-40a374b5><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16" data-v-40a374b5><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" data-v-40a374b5></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" data-v-40a374b5></path></svg></div><form data-v-40a374b5>`);
+  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-40a374b5><div class="text-center my-5" data-v-40a374b5><h1 data-v-40a374b5>Cr\xE9er un \xE9v\xE9nement</h1><hr data-v-40a374b5></div><div class="container my-5 pt-5" data-v-40a374b5><div class="row" data-v-40a374b5><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-40a374b5><div class="card border-0 shadow" data-v-40a374b5><div class="card-body" data-v-40a374b5><div class="text-center mb-5" data-v-40a374b5><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16" data-v-40a374b5><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" data-v-40a374b5></path><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" data-v-40a374b5></path></svg></div><form data-v-40a374b5>`);
   _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.event.title,
     "onUpdate:modelValue": ($event) => $setup.event.title = $event,
@@ -4188,8 +4243,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     }),
     _: 1
   }, _parent));
-  _push(`</div></form></div><pre data-v-40a374b5>              ${__vite_ssr_import_8__.ssrInterpolate($setup.event)}
-            </pre></div></div></div></div></div>`);
+  _push(`</div></form></div></div></div></div></div></div>`);
 }
 const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/create.vue?vue&type=style&index=0&scoped=true&lang.css");
 
@@ -4233,8 +4287,8 @@ const _sfc_main = {
   setup(__props, { expose }) {
   expose();
 
-// const { data: datas, error } = await useFetch("/event");
 let datas = __vite_ssr_import_2__.ref([]);
+
 async function getUser() {
   try {
     const response = await __vite_ssr_import_1__.default.get("/event");
@@ -4288,62 +4342,57 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // Parents: 
 // - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/routes.mjs ($id_NYS6RIyZKQ)
 // Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_6yHtfHy3cx)
 // - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
+// - /pages/index.vue?vue&type=style&index=0&scoped=true&lang.css ($id_SqnmXgZXcZ)
 // - /@id/plugin-vue:export-helper ($id_u7hjwQB3Fl)
 // --------------------
 const $id_zKWOlz8EPO = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
 
+const _sfc_main = {}
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-
-
-const _sfc_main = {
-  __name: 'index',
-  setup(__props, { expose }) {
-  expose();
-
-const events = __vite_ssr_import_1__.ref([]);
-
-const getUsers = async () => {
-  const data = await $fetch(`/event`);
-  console.log("data:", data);
-  events.value = data;
-};
-__vite_ssr_import_0__.onMounted(async () => {
-  getUsers();
-});
-
-const __returned__ = { events, getUsers, ref: __vite_ssr_import_1__.ref, reactive: __vite_ssr_import_1__.reactive }
-Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
-return __returned__
-}
-
-}
 const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
-function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
-  _push(`<div${
-    __vite_ssr_import_2__.ssrRenderAttrs(_attrs)
-  }>Event: ${
-    __vite_ssr_import_2__.ssrInterpolate($setup.events)
-  }</div>`)
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_nuxt_link = __vite_ssr_import_0__.default
+
+  _push(`<!--[--><div data-v-2a183b29><div class="headImg" style="${__vite_ssr_import_2__.ssrRenderStyle({"background-image":"url('../assets/img/bg.jpeg')"})}" data-v-2a183b29><div class="head-overlay d-flex justify-content-center align-items-center" data-v-2a183b29><div class="singleCol container text-center" data-v-2a183b29><h1 data-v-2a183b29>Bienvenue sur Troov~Test</h1><p class="lead" data-v-2a183b29><strong data-v-2a183b29> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet dolore praesentium quia accusamus, fugit officia nam minima cum totam nihil inventore. </strong></p>`)
+  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_nuxt_link, {
+    to: "/event",
+    class: "btn btn-outline-light"
+  }, {
+    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
+      if (_push) {
+        _push(`<strong data-v-2a183b29${_scopeId}>Nos évenements</strong>`)
+      } else {
+        return [
+          __vite_ssr_import_1__.createVNode("strong", null, "Nos évenements")
+        ]
+      }
+    }),
+    _: 1 /* STABLE */
+  }, _parent))
+  _push(`</div></div></div></div><main data-v-2a183b29><div class="darkBG py-5" data-v-2a183b29><div class="container singleCol" data-v-2a183b29><p class="lead" data-v-2a183b29> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore ex ratione accusamus accusantium odio consequatur! Asperiores reprehenderit voluptates, molestias deserunt facilis iusto voluptate. Velit dignissimos sed ipsa illo laudantium? </p></div></div><div class="container" data-v-2a183b29><div class="row py-4" data-v-2a183b29><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div><div class="col-12 col-md-4" data-v-2a183b29><p class="lead" data-v-2a183b29> lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem </p></div></div></div></main><!--]-->`)
 }
 
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/pages/index.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  const ssrContext = __vite_ssr_import_4__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/index.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/philipperobinet/Documents/NuxtJS/troov/pages/index.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-2a183b29"],['__file',"/Users/philipperobinet/Documents/NuxtJS/troov/pages/index.vue"]]);
 }
 
 
@@ -4381,7 +4430,6 @@ const _sfc_main = {
 
 const router = __vite_ssr_import_0__.useRouter();
 const route = __vite_ssr_import_0__.useRoute();
-console.log(route.params.id);
 const event = __vite_ssr_import_3__.ref([]);
 const errorMessage = __vite_ssr_import_3__.ref(null);
 
@@ -4389,7 +4437,6 @@ const getOneEvent = () => {
   __vite_ssr_import_4__.default
     .get(`/event/${route.params.id}`)
     .then((response) => {
-      console.log(response);
       event.value = response.data;
     })
     .catch((error) => {
@@ -4419,7 +4466,7 @@ const updateEvent = async () => {
       description: event.value.description,
       dateEvent: event.value.dateEvent,
       location: event.value.location,
-      userId: "1234",
+      userId: event.value.userId,
     })
     .then((response) => {
       console.log(response);
@@ -4434,7 +4481,7 @@ const updateEvent = async () => {
     });
 };
 
-const __returned__ = { router, route, event, errorMessage, getOneEvent, deleteEvent, updateEvent, ref: __vite_ssr_import_3__.ref, reactive: __vite_ssr_import_3__.reactive, axios: __vite_ssr_import_4__.default }
+const __returned__ = { router, route, event, errorMessage, getOneEvent, deleteEvent, updateEvent, ref: __vite_ssr_import_3__.ref, axios: __vite_ssr_import_4__.default }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
@@ -4482,20 +4529,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   } else {
     _push(`<!---->`)
   }
-  _push(`<!-- <div class="text-center mt-3 mr-2">
-                  <button @click.prevent="updateEvent" class="btn btn-primary">
-                    Modifier
-                  </button>
-                  <button
-                    @click.prevent="deleteEvent"
-                    class="btn btn-outline-danger"
-                  >
-                    Supprimer
-                  </button>
-                  <nuxt-link class="nav-link" to="/user/login"
-                    >Vous avez déjà un compte ?</nuxt-link
-                  >
-                </div> --><div class="text-center" data-v-c8a938f8><div class="btn-group" role="group" aria-label="Basic mixed styles example" data-v-c8a938f8><button type="button" class="btn btn-success" data-v-c8a938f8> Modifier </button><button type="button" class="btn btn-danger" data-v-c8a938f8> Supprimer </button></div></div></form></div></div></div></div></div></div>`)
+  _push(`<div class="text-center" data-v-c8a938f8><div class="btn-group" role="group" aria-label="Basic mixed styles example" data-v-c8a938f8><button type="button" class="btn btn-success" data-v-c8a938f8> Modifier </button><button type="button" class="btn btn-danger" data-v-c8a938f8> Supprimer </button></div></div></form></div></div></div></div></div></div>`)
 }
 
 const __vite_ssr_import_7__ = await __vite_ssr_import__("/pages/update/[id].vue?vue&type=style&index=0&scoped=true&lang.css");
@@ -4524,6 +4558,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_9__.default(_sfc_m
 // - /components/Form/Input.vue ($id_u6x9vuREvZ)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_6yHtfHy3cx)
 // - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
+// - /store/profileStore.js ($id_2d5ML4HenY)
 // - /node_modules/axios/index.js ($id_mg2sFjNRNK)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
 // - /pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css ($id_tbyNOAyVRG)
@@ -4540,54 +4575,56 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/axios/index.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/store/profileStore.js");
+
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/axios/index.js");
 
 const _sfc_main = /* @__PURE__ */ __vite_ssr_import_3__.defineComponent({
   __name: "login",
   setup(__props, { expose }) {
     expose();
     const router = __vite_ssr_import_0__.useRouter();
+    const profileStore = __vite_ssr_import_5__.useProfileStore();
     const user = __vite_ssr_import_4__.reactive({
       email: "",
       password: ""
     });
     const errorMessage = __vite_ssr_import_4__.ref(null);
     const login = async () => {
-      __vite_ssr_import_5__.default.post("/user/login", {
+      __vite_ssr_import_6__.default.post("/user/login", {
         email: user.email,
         password: user.password
-      }).then((response) => {
-        console.log(response);
+      }).then(() => {
         user.email = "";
         user.password = "";
+        profileStore.isLoggedIn = true;
         router.push("/event");
       }).catch((error) => {
-        console.error(error.response.data);
+        console.error("error login: ", error.response.data);
         errorMessage.value = error.response.data;
       });
-      console.log(user.email);
     };
-    const __returned__ = { router, user, errorMessage, login };
+    const __returned__ = { router, profileStore, user, errorMessage, login };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
   }
 });
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_nuxt_link = __vite_ssr_import_2__.default;
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-802e0a44><div class="text-center my-5" data-v-802e0a44><h1 data-v-802e0a44>Connexion</h1><hr data-v-802e0a44></div><div class="container mt-5 pt-5" data-v-802e0a44><div class="row" data-v-802e0a44><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-802e0a44><div class="card border-0 shadow" data-v-802e0a44><div class="card-body" data-v-802e0a44><div class="text-center" data-v-802e0a44><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-802e0a44><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-802e0a44></path></svg></div><form data-v-802e0a44>`);
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
+  _push(`<div${__vite_ssr_import_8__.ssrRenderAttrs(__vite_ssr_import_7__.mergeProps({ class: "container" }, _attrs))} data-v-802e0a44><div class="text-center my-5" data-v-802e0a44><h1 data-v-802e0a44>Connexion</h1><hr data-v-802e0a44></div><div class="container my-5 pt-5" data-v-802e0a44><div class="row" data-v-802e0a44><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-802e0a44><div class="card border-0 shadow" data-v-802e0a44><div class="card-body" data-v-802e0a44><div class="text-center" data-v-802e0a44><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-802e0a44><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-802e0a44></path></svg></div><form data-v-802e0a44>`);
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.email,
     "onUpdate:modelValue": ($event) => $setup.user.email = $event,
     label: "Email",
     type: "text",
     id: "email"
   }, null, _parent));
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.password,
     "onUpdate:modelValue": ($event) => $setup.user.password = $event,
     label: "Mot de passe",
@@ -4595,21 +4632,21 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     id: "password"
   }, null, _parent));
   if ($setup.errorMessage) {
-    _push(`<p class="error-message text-center" data-v-802e0a44>${__vite_ssr_import_7__.ssrInterpolate($setup.errorMessage)}</p>`);
+    _push(`<p class="error-message text-center" data-v-802e0a44>${__vite_ssr_import_8__.ssrInterpolate($setup.errorMessage)}</p>`);
   } else {
     _push(`<!---->`);
   }
   _push(`<div class="text-center mt-3" data-v-802e0a44><button class="btn btn-primary" data-v-802e0a44> Envoyer </button>`);
-  _push(__vite_ssr_import_7__.ssrRenderComponent(_component_nuxt_link, {
+  _push(__vite_ssr_import_8__.ssrRenderComponent(_component_nuxt_link, {
     class: "nav-link",
     to: "/user/register"
   }, {
-    default: __vite_ssr_import_6__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_7__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`Vous n&#39;avez pas encore de compte ?`);
       } else {
         return [
-          __vite_ssr_import_6__.createTextVNode("Vous n'avez pas encore de compte ?")
+          __vite_ssr_import_7__.createTextVNode("Vous n'avez pas encore de compte ?")
         ];
       }
     }),
@@ -4617,19 +4654,19 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
   }, _parent));
   _push(`</div></form></div></div></div></div></div></div>`);
 }
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_9__.useSSRContext();
+  const ssrContext = __vite_ssr_import_10__.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/user/login.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const __vite_ssr_import_10__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_10__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-802e0a44"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/pages/user/login.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_11__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-802e0a44"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/pages/user/login.vue"]]);
 ;
 }
 
@@ -4700,7 +4737,7 @@ const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/serve
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_FormInput = __vite_ssr_import_1__.default;
   const _component_nuxt_link = __vite_ssr_import_2__.default;
-  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-f11a6d84><div class="text-center my-5" data-v-f11a6d84><h1 data-v-f11a6d84>Inscription</h1><hr data-v-f11a6d84></div><div class="container mt-5 pt-5" data-v-f11a6d84><div class="row" data-v-f11a6d84><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-f11a6d84><div class="card border-0 shadow" data-v-f11a6d84><div class="card-body" data-v-f11a6d84><div class="text-center" data-v-f11a6d84><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-f11a6d84><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-f11a6d84></path></svg></div><form class="my-4 py-2" data-v-f11a6d84>`);
+  _push(`<div${__vite_ssr_import_7__.ssrRenderAttrs(__vite_ssr_import_6__.mergeProps({ class: "container" }, _attrs))} data-v-f11a6d84><div class="text-center my-5" data-v-f11a6d84><h1 data-v-f11a6d84>Inscription</h1><hr data-v-f11a6d84></div><div class="container my-5 pt-5" data-v-f11a6d84><div class="row" data-v-f11a6d84><div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto" data-v-f11a6d84><div class="card border-0 shadow" data-v-f11a6d84><div class="card-body" data-v-f11a6d84><div class="text-center" data-v-f11a6d84><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16" data-v-f11a6d84><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" data-v-f11a6d84></path></svg></div><form class="my-4 py-2" data-v-f11a6d84>`);
   _push(__vite_ssr_import_7__.ssrRenderComponent(_component_FormInput, {
     modelValue: $setup.user.name,
     "onUpdate:modelValue": ($event) => $setup.user.name = $event,
@@ -4789,6 +4826,254 @@ const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {}
 Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: true, configurable: true, get(){ return namedMiddleware }});;
+}
+
+
+// --------------------
+// Request: /node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/plugins/server.mjs ($id_EviSavUWra)
+// Dependencies: 
+// - /node_modules/pinia/dist/pinia.mjs ($id_sZIGJFdlmr)
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// --------------------
+const $id_i9ItelNnNP = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/pinia/dist/pinia.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_1__.defineNuxtPlugin((nuxtApp) => {
+  const pinia = __vite_ssr_import_0__.createPinia();
+  nuxtApp.vueApp.use(pinia);
+  __vite_ssr_import_0__.setActivePinia(pinia);
+  if (true) {
+    nuxtApp.payload.pinia = pinia.state.value;
+  } else if (nuxtApp.payload && nuxtApp.payload.pinia) {
+    pinia.state.value = nuxtApp.payload.pinia;
+  }
+  return {
+    provide: {
+      pinia
+    }
+  };
+});
+;
+}
+
+
+// --------------------
+// Request: /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs
+// Parents: 
+// - /node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs ($id_i9ItelNnNP)
+// - /node_modules/@pinia/nuxt/dist/runtime/composables.mjs ($id_Z1toVhSsqJ)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_uQ1ND2iuUo)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_FMi1dBhUQk)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_vC10oUHchO)
+// Dependencies: 
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_tzUUgT5kx6)
+// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_qBEL58R1ls)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_NpJ0d20vMd)
+// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
+// - /node_modules/@pinia/nuxt/dist/runtime/composables.mjs ($id_Z1toVhSsqJ)
+// - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_27UVWcb1VH)
+// - /node_modules/vue-router/dist/vue-router.cjs.js ($id_aSmmIHQt8x)
+// --------------------
+const $id_2kASXsSBem = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.useHead }});
+Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.useMeta }});
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.isVue2 }});
+Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.isVue3 }});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useAsyncData }});
+Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useLazyAsyncData }});
+Object.defineProperty(__vite_ssr_exports__, "refreshNuxtData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.refreshNuxtData }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtComponent }});
+Object.defineProperty(__vite_ssr_exports__, "useNuxtApp", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useNuxtApp }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtPlugin", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtPlugin }});
+Object.defineProperty(__vite_ssr_exports__, "useRuntimeConfig", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRuntimeConfig }});
+Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useState }});
+Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useFetch }});
+Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useLazyFetch }});
+Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useCookie }});
+Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRequestHeaders }});
+Object.defineProperty(__vite_ssr_exports__, "useRequestEvent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRequestEvent }});
+Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRouter }});
+Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRoute }});
+Object.defineProperty(__vite_ssr_exports__, "useActiveRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useActiveRoute }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.navigateTo }});
+Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.abortNavigation }});
+Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.addRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "throwError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.throwError }});
+Object.defineProperty(__vite_ssr_exports__, "clearError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.clearError }});
+Object.defineProperty(__vite_ssr_exports__, "useError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useError }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtLink }});
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+Object.defineProperty(__vite_ssr_exports__, "withCtx", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withCtx }});
+Object.defineProperty(__vite_ssr_exports__, "withDirectives", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withDirectives }});
+Object.defineProperty(__vite_ssr_exports__, "withKeys", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withKeys }});
+Object.defineProperty(__vite_ssr_exports__, "withMemo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withMemo }});
+Object.defineProperty(__vite_ssr_exports__, "withModifiers", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withModifiers }});
+Object.defineProperty(__vite_ssr_exports__, "withScopeId", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withScopeId }});
+Object.defineProperty(__vite_ssr_exports__, "onActivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onActivated }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeMount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeMount }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeUnmount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeUnmount }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeUpdate", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeUpdate }});
+Object.defineProperty(__vite_ssr_exports__, "onDeactivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onDeactivated }});
+Object.defineProperty(__vite_ssr_exports__, "onErrorCaptured", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onErrorCaptured }});
+Object.defineProperty(__vite_ssr_exports__, "onMounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onMounted }});
+Object.defineProperty(__vite_ssr_exports__, "onRenderTracked", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onRenderTracked }});
+Object.defineProperty(__vite_ssr_exports__, "onRenderTriggered", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onRenderTriggered }});
+Object.defineProperty(__vite_ssr_exports__, "onServerPrefetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onServerPrefetch }});
+Object.defineProperty(__vite_ssr_exports__, "onUnmounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onUnmounted }});
+Object.defineProperty(__vite_ssr_exports__, "onUpdated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onUpdated }});
+Object.defineProperty(__vite_ssr_exports__, "computed", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.computed }});
+Object.defineProperty(__vite_ssr_exports__, "customRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.customRef }});
+Object.defineProperty(__vite_ssr_exports__, "isProxy", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isProxy }});
+Object.defineProperty(__vite_ssr_exports__, "isReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isReactive }});
+Object.defineProperty(__vite_ssr_exports__, "isReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isReadonly }});
+Object.defineProperty(__vite_ssr_exports__, "isRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isRef }});
+Object.defineProperty(__vite_ssr_exports__, "markRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.markRaw }});
+Object.defineProperty(__vite_ssr_exports__, "proxyRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.proxyRefs }});
+Object.defineProperty(__vite_ssr_exports__, "reactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.reactive }});
+Object.defineProperty(__vite_ssr_exports__, "readonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.readonly }});
+Object.defineProperty(__vite_ssr_exports__, "ref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.ref }});
+Object.defineProperty(__vite_ssr_exports__, "shallowReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowReactive }});
+Object.defineProperty(__vite_ssr_exports__, "shallowReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowReadonly }});
+Object.defineProperty(__vite_ssr_exports__, "shallowRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowRef }});
+Object.defineProperty(__vite_ssr_exports__, "toRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRaw }});
+Object.defineProperty(__vite_ssr_exports__, "toRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRef }});
+Object.defineProperty(__vite_ssr_exports__, "toRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRefs }});
+Object.defineProperty(__vite_ssr_exports__, "triggerRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.triggerRef }});
+Object.defineProperty(__vite_ssr_exports__, "unref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.unref }});
+Object.defineProperty(__vite_ssr_exports__, "watch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.watch }});
+Object.defineProperty(__vite_ssr_exports__, "watchEffect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.watchEffect }});
+Object.defineProperty(__vite_ssr_exports__, "isShallow", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isShallow }});
+Object.defineProperty(__vite_ssr_exports__, "effect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.effect }});
+Object.defineProperty(__vite_ssr_exports__, "effectScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.effectScope }});
+Object.defineProperty(__vite_ssr_exports__, "getCurrentScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.getCurrentScope }});
+Object.defineProperty(__vite_ssr_exports__, "onScopeDispose", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onScopeDispose }});
+Object.defineProperty(__vite_ssr_exports__, "defineComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.defineComponent }});
+Object.defineProperty(__vite_ssr_exports__, "defineAsyncComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.defineAsyncComponent }});
+Object.defineProperty(__vite_ssr_exports__, "resolveComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.resolveComponent }});
+Object.defineProperty(__vite_ssr_exports__, "getCurrentInstance", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.getCurrentInstance }});
+Object.defineProperty(__vite_ssr_exports__, "h", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.h }});
+Object.defineProperty(__vite_ssr_exports__, "inject", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.inject }});
+Object.defineProperty(__vite_ssr_exports__, "nextTick", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.nextTick }});
+Object.defineProperty(__vite_ssr_exports__, "provide", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.provide }});
+Object.defineProperty(__vite_ssr_exports__, "useAttrs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useAttrs }});
+Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useCssModule }});
+Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useCssVars }});
+Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useSlots }});
+Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useTransitionState }});
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@pinia/nuxt/dist/runtime/composables.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "usePinia", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.usePinia }});
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.definePageMeta }});
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue-router/dist/vue-router.cjs.js");
+
+Object.defineProperty(__vite_ssr_exports__, "useLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useLink }});;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_DFcXpE295m)
+// --------------------
+const $id_qBEL58R1ls = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/capi.mjs");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+const Vue2 = void 0;
+Object.defineProperty(__vite_ssr_exports__, "Vue2", { enumerable: true, configurable: true, get(){ return Vue2 }});
+const isVue2 = false;
+Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return isVue2 }});
+const isVue3 = true;
+Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return isVue3 }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/app/compat/capi.mjs
+// Parents: 
+// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_qBEL58R1ls)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
+// --------------------
+const $id_DFcXpE295m = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+const install = () => {
+};
+Object.defineProperty(__vite_ssr_exports__, "install", { enumerable: true, configurable: true, get(){ return install }});
+function set(target, key, val) {
+  if (Array.isArray(target)) {
+    target.length = Math.max(target.length, key);
+    target.splice(key, 1, val);
+    return val;
+  }
+  target[key] = val;
+  return val;
+}
+Object.defineProperty(__vite_ssr_exports__, "set", { enumerable: true, configurable: true, get(){ return set }});
+function del(target, key) {
+  if (Array.isArray(target)) {
+    target.splice(key, 1);
+    return;
+  }
+  delete target[key];
+}
+Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configurable: true, get(){ return del }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@pinia/nuxt/dist/runtime/composables.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// Dependencies: 
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// - /node_modules/pinia/dist/pinia.mjs ($id_sZIGJFdlmr)
+// --------------------
+const $id_Z1toVhSsqJ = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/pinia/dist/pinia.mjs");
+__vite_ssr_exportAll__(__vite_ssr_import_1__);
+const usePinia = () => __vite_ssr_import_0__.useNuxtApp().$pinia;
+Object.defineProperty(__vite_ssr_exports__, "usePinia", { enumerable: true, configurable: true, get(){ return usePinia }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
+// Dependencies: 
+
+// --------------------
+const $id_27UVWcb1VH = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const warnRuntimeUsage = (method) => console.warn(`${method}() is a compiler-hint helper that is only usable inside the script block of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`);
+const definePageMeta = (meta) => {
+  if (true) {
+    warnRuntimeUsage("definePageMeta");
+  }
+};
+Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return definePageMeta }});
+;
 }
 
 
@@ -5112,197 +5397,6 @@ _sfc_main.setup = (props, ctx) => {
 const __vite_ssr_import_6__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
 __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',"data-v-573335c0"],['__file',"/Users/philipperobinet/Documents/NuxtJS/troov/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue"]]);
-}
-
-
-// --------------------
-// Request: /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs
-// Parents: 
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_uQ1ND2iuUo)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_FMi1dBhUQk)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_vC10oUHchO)
-// Dependencies: 
-// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_tzUUgT5kx6)
-// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_qBEL58R1ls)
-// - /node_modules/nuxt/dist/app/index.mjs ($id_NpJ0d20vMd)
-// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
-// - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_27UVWcb1VH)
-// - /node_modules/vue-router/dist/vue-router.cjs.js ($id_aSmmIHQt8x)
-// --------------------
-const $id_2kASXsSBem = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.useHead }});
-Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_0__.useMeta }});
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.isVue2 }});
-Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_1__.isVue3 }});
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useAsyncData }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useLazyAsyncData }});
-Object.defineProperty(__vite_ssr_exports__, "refreshNuxtData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.refreshNuxtData }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtComponent }});
-Object.defineProperty(__vite_ssr_exports__, "useNuxtApp", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useNuxtApp }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtPlugin", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtPlugin }});
-Object.defineProperty(__vite_ssr_exports__, "useRuntimeConfig", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRuntimeConfig }});
-Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useState }});
-Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useFetch }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useLazyFetch }});
-Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useCookie }});
-Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRequestHeaders }});
-Object.defineProperty(__vite_ssr_exports__, "useRequestEvent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRequestEvent }});
-Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRouter }});
-Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useRoute }});
-Object.defineProperty(__vite_ssr_exports__, "useActiveRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useActiveRoute }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtRouteMiddleware }});
-Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.navigateTo }});
-Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.abortNavigation }});
-Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.addRouteMiddleware }});
-Object.defineProperty(__vite_ssr_exports__, "throwError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.throwError }});
-Object.defineProperty(__vite_ssr_exports__, "clearError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.clearError }});
-Object.defineProperty(__vite_ssr_exports__, "useError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.useError }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_2__.defineNuxtLink }});
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-Object.defineProperty(__vite_ssr_exports__, "withCtx", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withCtx }});
-Object.defineProperty(__vite_ssr_exports__, "withDirectives", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withDirectives }});
-Object.defineProperty(__vite_ssr_exports__, "withKeys", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withKeys }});
-Object.defineProperty(__vite_ssr_exports__, "withMemo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withMemo }});
-Object.defineProperty(__vite_ssr_exports__, "withModifiers", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withModifiers }});
-Object.defineProperty(__vite_ssr_exports__, "withScopeId", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.withScopeId }});
-Object.defineProperty(__vite_ssr_exports__, "onActivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onActivated }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeMount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeMount }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeUnmount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeUnmount }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeUpdate", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onBeforeUpdate }});
-Object.defineProperty(__vite_ssr_exports__, "onDeactivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onDeactivated }});
-Object.defineProperty(__vite_ssr_exports__, "onErrorCaptured", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onErrorCaptured }});
-Object.defineProperty(__vite_ssr_exports__, "onMounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onMounted }});
-Object.defineProperty(__vite_ssr_exports__, "onRenderTracked", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onRenderTracked }});
-Object.defineProperty(__vite_ssr_exports__, "onRenderTriggered", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onRenderTriggered }});
-Object.defineProperty(__vite_ssr_exports__, "onServerPrefetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onServerPrefetch }});
-Object.defineProperty(__vite_ssr_exports__, "onUnmounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onUnmounted }});
-Object.defineProperty(__vite_ssr_exports__, "onUpdated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onUpdated }});
-Object.defineProperty(__vite_ssr_exports__, "computed", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.computed }});
-Object.defineProperty(__vite_ssr_exports__, "customRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.customRef }});
-Object.defineProperty(__vite_ssr_exports__, "isProxy", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isProxy }});
-Object.defineProperty(__vite_ssr_exports__, "isReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isReactive }});
-Object.defineProperty(__vite_ssr_exports__, "isReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isReadonly }});
-Object.defineProperty(__vite_ssr_exports__, "isRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isRef }});
-Object.defineProperty(__vite_ssr_exports__, "markRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.markRaw }});
-Object.defineProperty(__vite_ssr_exports__, "proxyRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.proxyRefs }});
-Object.defineProperty(__vite_ssr_exports__, "reactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.reactive }});
-Object.defineProperty(__vite_ssr_exports__, "readonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.readonly }});
-Object.defineProperty(__vite_ssr_exports__, "ref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.ref }});
-Object.defineProperty(__vite_ssr_exports__, "shallowReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowReactive }});
-Object.defineProperty(__vite_ssr_exports__, "shallowReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowReadonly }});
-Object.defineProperty(__vite_ssr_exports__, "shallowRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.shallowRef }});
-Object.defineProperty(__vite_ssr_exports__, "toRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRaw }});
-Object.defineProperty(__vite_ssr_exports__, "toRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRef }});
-Object.defineProperty(__vite_ssr_exports__, "toRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.toRefs }});
-Object.defineProperty(__vite_ssr_exports__, "triggerRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.triggerRef }});
-Object.defineProperty(__vite_ssr_exports__, "unref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.unref }});
-Object.defineProperty(__vite_ssr_exports__, "watch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.watch }});
-Object.defineProperty(__vite_ssr_exports__, "watchEffect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.watchEffect }});
-Object.defineProperty(__vite_ssr_exports__, "isShallow", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.isShallow }});
-Object.defineProperty(__vite_ssr_exports__, "effect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.effect }});
-Object.defineProperty(__vite_ssr_exports__, "effectScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.effectScope }});
-Object.defineProperty(__vite_ssr_exports__, "getCurrentScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.getCurrentScope }});
-Object.defineProperty(__vite_ssr_exports__, "onScopeDispose", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.onScopeDispose }});
-Object.defineProperty(__vite_ssr_exports__, "defineComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.defineComponent }});
-Object.defineProperty(__vite_ssr_exports__, "defineAsyncComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.defineAsyncComponent }});
-Object.defineProperty(__vite_ssr_exports__, "resolveComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.resolveComponent }});
-Object.defineProperty(__vite_ssr_exports__, "getCurrentInstance", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.getCurrentInstance }});
-Object.defineProperty(__vite_ssr_exports__, "h", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.h }});
-Object.defineProperty(__vite_ssr_exports__, "inject", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.inject }});
-Object.defineProperty(__vite_ssr_exports__, "nextTick", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.nextTick }});
-Object.defineProperty(__vite_ssr_exports__, "provide", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.provide }});
-Object.defineProperty(__vite_ssr_exports__, "useAttrs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useAttrs }});
-Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useCssModule }});
-Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useCssVars }});
-Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useSlots }});
-Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_3__.useTransitionState }});
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.definePageMeta }});
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue-router/dist/vue-router.cjs.js");
-
-Object.defineProperty(__vite_ssr_exports__, "useLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.useLink }});;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
-// Parents: 
-// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
-// Dependencies: 
-// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_DFcXpE295m)
-// --------------------
-const $id_qBEL58R1ls = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/capi.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-const Vue2 = void 0;
-Object.defineProperty(__vite_ssr_exports__, "Vue2", { enumerable: true, configurable: true, get(){ return Vue2 }});
-const isVue2 = false;
-Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return isVue2 }});
-const isVue3 = true;
-Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return isVue3 }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/app/compat/capi.mjs
-// Parents: 
-// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_qBEL58R1ls)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
-// --------------------
-const $id_DFcXpE295m = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-const install = () => {
-};
-Object.defineProperty(__vite_ssr_exports__, "install", { enumerable: true, configurable: true, get(){ return install }});
-function set(target, key, val) {
-  if (Array.isArray(target)) {
-    target.length = Math.max(target.length, key);
-    target.splice(key, 1, val);
-    return val;
-  }
-  target[key] = val;
-  return val;
-}
-Object.defineProperty(__vite_ssr_exports__, "set", { enumerable: true, configurable: true, get(){ return set }});
-function del(target, key) {
-  if (Array.isArray(target)) {
-    target.splice(key, 1);
-    return;
-  }
-  delete target[key];
-}
-Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configurable: true, get(){ return del }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
-// Parents: 
-// - /@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs ($id_2kASXsSBem)
-// Dependencies: 
-
-// --------------------
-const $id_27UVWcb1VH = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const warnRuntimeUsage = (method) => console.warn(`${method}() is a compiler-hint helper that is only usable inside the script block of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`);
-const definePageMeta = (meta) => {
-  if (true) {
-    warnRuntimeUsage("definePageMeta");
-  }
-};
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return definePageMeta }});
-;
 }
 
 
@@ -5713,6 +5807,7 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_m
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_6yHtfHy3cx)
 // - /node_modules/vue/dist/vue.cjs.js ($id_YPBhX5dq3F)
+// - /store/profileStore.js ($id_2d5ML4HenY)
 // - /node_modules/axios/index.js ($id_mg2sFjNRNK)
 // - /node_modules/vue/server-renderer/index.js ($id_shX6HK8fbb)
 // - /components/Nav.vue?vue&type=style&index=0&scoped=true&lang.css ($id_LFDkqkBlmk)
@@ -5723,138 +5818,148 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/axios/index.js");
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/store/profileStore.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/axios/index.js");
 
 const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
   __name: "Nav",
   setup(__props, { expose }) {
     expose();
+    const profileStore = __vite_ssr_import_2__.useProfileStore();
     const logout = () => {
-      __vite_ssr_import_2__.default.post("/user/logout");
+      __vite_ssr_import_3__.default.post("/user/logout");
+      profileStore.isLoggedIn = false;
     };
-    const __returned__ = { logout };
+    const __returned__ = { profileStore, logout };
     Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
     return __returned__;
   }
 });
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_nuxt_link = __vite_ssr_import_0__.default;
-  _push(`<section${__vite_ssr_import_4__.ssrRenderAttrs(__vite_ssr_import_3__.mergeProps({ class: "section-nav" }, _attrs))} data-v-738fae98><nav class="navbar navbar-expand-lg navbar-light" data-v-738fae98><div class="container" data-v-738fae98><!-- Name --><div class="header-left px-5 d-flex justify-content-center" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
+  _push(`<section${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "section-nav" }, _attrs))} data-v-738fae98><nav class="navbar navbar-expand-lg navbar-light" data-v-738fae98><div class="container" data-v-738fae98><!-- Name --><div class="header-left px-5 d-flex justify-content-center" data-v-738fae98>`);
+  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
     to: "/",
     class: "label d-inline mx-2"
   }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`Troov~Test`);
       } else {
         return [
-          __vite_ssr_import_3__.createTextVNode("Troov~Test")
+          __vite_ssr_import_4__.createTextVNode("Troov~Test")
         ];
       }
     }),
     _: 1
   }, _parent));
   _push(`</div><!-- Nav Item --><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" data-v-738fae98><span class="navbar-toggler-icon" data-v-738fae98></span></button><div class="collapse navbar-collapse" id="navbarTogglerDemo01" data-v-738fae98><ul class="navbar-nav me-auto" data-v-738fae98><li class="nav-item" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
+  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
     to: "/event",
     class: "nav-link",
     "aria-current": "page"
   }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
         _push2(`Events`);
       } else {
         return [
-          __vite_ssr_import_3__.createTextVNode("Events")
+          __vite_ssr_import_4__.createTextVNode("Events")
         ];
       }
     }),
     _: 1
   }, _parent));
   _push(`</li><li class="nav-item" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
+  _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
     to: "/create",
     class: "nav-link"
   }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
+    default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`Ajouter un event`);
+        _push2(`Cr\xE9ers un \xE9v\xE9nement`);
       } else {
         return [
-          __vite_ssr_import_3__.createTextVNode("Ajouter un event")
+          __vite_ssr_import_4__.createTextVNode("Cr\xE9ers un \xE9v\xE9nement")
         ];
       }
     }),
     _: 1
   }, _parent));
-  _push(`</li></ul><div class="form-inline my-2 my-lg-0" data-v-738fae98><ul class="navbar-nav me-auto" data-v-738fae98><li class="nav-item" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
-    to: "/user/login",
-    class: "nav-link"
-  }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Connexion`);
-      } else {
-        return [
-          __vite_ssr_import_3__.createTextVNode("Connexion")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li><li class="nav-item" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
-    to: "/user/register",
-    class: "nav-link"
-  }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Inscription`);
-      } else {
-        return [
-          __vite_ssr_import_3__.createTextVNode("Inscription")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</li></ul></div><div class="form-inline my-2 my-lg-0" data-v-738fae98><div class="navbar-nav me-auto" data-v-738fae98><p class="nav-item" data-v-738fae98>`);
-  _push(__vite_ssr_import_4__.ssrRenderComponent(_component_nuxt_link, {
-    to: "/user/login",
-    class: "nav-link"
-  }, {
-    default: __vite_ssr_import_3__.withCtx((_, _push2, _parent2, _scopeId) => {
-      if (_push2) {
-        _push2(`Logout`);
-      } else {
-        return [
-          __vite_ssr_import_3__.createTextVNode("Logout")
-        ];
-      }
-    }),
-    _: 1
-  }, _parent));
-  _push(`</p></div></div></div></div></nav></section>`);
+  _push(`</li></ul>`);
+  if (!$setup.profileStore.isLoggedIn) {
+    _push(`<div class="form-inline my-2 my-lg-0" data-v-738fae98><ul class="navbar-nav me-auto" data-v-738fae98><li class="nav-item" data-v-738fae98>`);
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
+      to: "/user/login",
+      class: "nav-link"
+    }, {
+      default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
+        if (_push2) {
+          _push2(`Connexion`);
+        } else {
+          return [
+            __vite_ssr_import_4__.createTextVNode("Connexion")
+          ];
+        }
+      }),
+      _: 1
+    }, _parent));
+    _push(`</li><li class="nav-item" data-v-738fae98>`);
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
+      to: "/user/register",
+      class: "nav-link"
+    }, {
+      default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
+        if (_push2) {
+          _push2(`Inscription`);
+        } else {
+          return [
+            __vite_ssr_import_4__.createTextVNode("Inscription")
+          ];
+        }
+      }),
+      _: 1
+    }, _parent));
+    _push(`</li></ul></div>`);
+  } else {
+    _push(`<div class="form-inline my-2 my-lg-0" data-v-738fae98><div class="navbar-nav me-auto" data-v-738fae98><p class="nav-item" data-v-738fae98>`);
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_nuxt_link, {
+      to: "/user/login",
+      class: "nav-link"
+    }, {
+      default: __vite_ssr_import_4__.withCtx((_, _push2, _parent2, _scopeId) => {
+        if (_push2) {
+          _push2(`Logout`);
+        } else {
+          return [
+            __vite_ssr_import_4__.createTextVNode("Logout")
+          ];
+        }
+      }),
+      _: 1
+    }, _parent));
+    _push(`</p></div></div>`);
+  }
+  _push(`</div></div></nav></section>`);
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/components/Nav.vue?vue&type=style&index=0&scoped=true&lang.css");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/components/Nav.vue?vue&type=style&index=0&scoped=true&lang.css");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_6__.useSSRContext();
+  const ssrContext = __vite_ssr_import_7__.useSSRContext();
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("components/Nav.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-738fae98"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/components/Nav.vue"]]);
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_8__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__scopeId", "data-v-738fae98"], ["__file", "/Users/philipperobinet/Documents/NuxtJS/troov/components/Nav.vue"]]);
 ;
 }
 
@@ -5867,7 +5972,7 @@ __vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_7__.default(_sf
 
 // --------------------
 const $id_LFDkqkBlmk = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "\n.section-nav[data-v-738fae98] {\n  width: 100%;\n  color: rgb(0, 0, 0);\n  background-color: rgb(255, 255, 255);\n}\n.section-nav nav[data-v-738fae98] {\n  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);\n}\n.section-nav .label[data-v-738fae98] {\n  font-weight: 500;\n  color: rgba(0, 0, 0, 0.85);\n  font-size: 20px;\n  text-decoration: none;\n}\n.section-nav .nav-link[data-v-738fae98] {\n  font-weight: 400;\n  color: black !important;\n}\n.section-nav .nav-link[data-v-738fae98]:hover {\n  font-weight: 400;\n  color: red;\n}\n";
+__vite_ssr_exports__.default = "\n.section-nav[data-v-738fae98] {\n  width: 100%;\n  color: rgb(0, 0, 0);\n  background-color: rgb(255, 255, 255);\n}\n.section-nav nav[data-v-738fae98] {\n  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);\n}\n.section-nav .label[data-v-738fae98] {\n  font-weight: 500;\n  color: rgba(0, 0, 0, 0.85);\n  font-size: 20px;\n  text-decoration: none;\n}\n.section-nav .nav-link[data-v-738fae98] {\n  font-weight: 400;\n  color: black !important;\n}\n.section-nav .nav-link[data-v-738fae98]:hover {\n  font-weight: 400;\n}\n";
 }
 
 
@@ -5940,9 +6045,12 @@ const __modules__ = {
   "/pages/event.vue?macro=true": $id_362bnXc8ls,
   "/components/Card.vue": $id_JDqv8pOB1u,
   "/pages/index.vue?macro=true": $id_XdcCQB7w7V,
+  "/pages/index.vue?vue&type=style&index=0&scoped=true&lang.css": $id_SqnmXgZXcZ,
   "/pages/update/[id].vue?macro=true": $id_AGpwRlMB66,
   "/pages/update/[id].vue?vue&type=style&index=0&scoped=true&lang.css": $id_KMtSiSZxIz,
   "/pages/user/login.vue?macro=true": $id_hCqukOuM1U,
+  "/store/profileStore.js": $id_2d5ML4HenY,
+  "/node_modules/pinia/dist/pinia.mjs": $id_sZIGJFdlmr,
   "/pages/user/login.vue?vue&type=style&index=0&scoped=true&lang.css": $id_tbyNOAyVRG,
   "/pages/user/register.vue?macro=true": $id_m7QQwFqhrZ,
   "/pages/user/register.vue?vue&type=style&index=0&scoped=true&lang.css": $id_1tZMl7ke4G,
@@ -5955,15 +6063,17 @@ const __modules__ = {
   "/pages/user/register.vue": $id_ublemiS0hw,
   "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/router.options.mjs": $id_eDfNBsdIJm,
   "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/middleware.mjs": $id_9dV260oVIp,
+  "/node_modules/@pinia/nuxt/dist/runtime/plugin.vue3.mjs": $id_i9ItelNnNP,
+  "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs": $id_2kASXsSBem,
+  "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_qBEL58R1ls,
+  "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_DFcXpE295m,
+  "/node_modules/@pinia/nuxt/dist/runtime/composables.mjs": $id_Z1toVhSsqJ,
+  "/node_modules/nuxt/dist/pages/runtime/composables.mjs": $id_27UVWcb1VH,
   "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/root-component.mjs": $id_BRAQOzjvms,
   "/node_modules/nuxt/dist/app/components/nuxt-root.vue": $id_6btoGdWLJh,
   "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/error-component.mjs": $id_lHz0Z9oGM6,
   "/node_modules/nuxt/dist/app/components/nuxt-error-page.vue": $id_jMbXP0vyaY,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": $id_uQ1ND2iuUo,
-  "/@id/virtual:nuxt:/Users/philipperobinet/Documents/NuxtJS/troov/.nuxt/imports.mjs": $id_2kASXsSBem,
-  "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_qBEL58R1ls,
-  "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_DFcXpE295m,
-  "/node_modules/nuxt/dist/pages/runtime/composables.mjs": $id_27UVWcb1VH,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css": $id_5otrOPr3UP,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": $id_FMi1dBhUQk,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css": $id_orO3Ccf7NQ,

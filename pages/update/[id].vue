@@ -1,10 +1,9 @@
 <script setup>
-import { ref, reactive } from "vue";
+import { ref } from "vue";
 import axios from "axios";
 
 const router = useRouter();
 const route = useRoute();
-console.log(route.params.id);
 const event = ref([]);
 const errorMessage = ref(null);
 
@@ -12,7 +11,6 @@ const getOneEvent = () => {
   axios
     .get(`/event/${route.params.id}`)
     .then((response) => {
-      console.log(response);
       event.value = response.data;
     })
     .catch((error) => {
@@ -42,7 +40,7 @@ const updateEvent = async () => {
       description: event.value.description,
       dateEvent: event.value.dateEvent,
       location: event.value.location,
-      userId: "1234",
+      userId: event.value.userId,
     })
     .then((response) => {
       console.log(response);
@@ -117,30 +115,24 @@ const updateEvent = async () => {
                 <p class="error-message text-center" v-if="errorMessage">
                   {{ errorMessage }}
                 </p>
-                <!-- <div class="text-center mt-3 mr-2">
-                  <button @click.prevent="updateEvent" class="btn btn-primary">
-                    Modifier
-                  </button>
-                  <button
-                    @click.prevent="deleteEvent"
-                    class="btn btn-outline-danger"
-                  >
-                    Supprimer
-                  </button>
-                  <nuxt-link class="nav-link" to="/user/login"
-                    >Vous avez déjà un compte ?</nuxt-link
-                  >
-                </div> -->
                 <div class="text-center">
                   <div
                     class="btn-group"
                     role="group"
                     aria-label="Basic mixed styles example"
                   >
-                    <button type="button" class="btn btn-success">
+                    <button
+                      @click.prevent="updateEvent"
+                      type="button"
+                      class="btn btn-success"
+                    >
                       Modifier
                     </button>
-                    <button type="button" class="btn btn-danger">
+                    <button
+                      @click.prevent="deleteEvent"
+                      type="button"
+                      class="btn btn-danger"
+                    >
                       Supprimer
                     </button>
                   </div>

@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref, reactive } from "vue";
+import { useProfileStore } from "../../store/profileStore";
 import axios from "axios";
 
 const router = useRouter();
+const profileStore = useProfileStore();
 const user = reactive({
   email: "",
   password: "",
@@ -16,17 +18,16 @@ const login = async () => {
       email: user.email,
       password: user.password,
     })
-    .then((response) => {
-      console.log(response);
+    .then(() => {
       user.email = "";
       user.password = "";
+      profileStore.toggleIsLoggedIn();
       router.push("/event");
     })
     .catch((error) => {
-      console.error(error.response.data);
+      console.error("error login: ", error.response.data);
       errorMessage.value = error.response.data;
     });
-  console.log(user.email);
 };
 </script>
 
@@ -36,7 +37,7 @@ const login = async () => {
       <h1>Connexion</h1>
       <hr />
     </div>
-    <div class="container mt-5 pt-5">
+    <div class="container my-5 pt-5">
       <div class="row">
         <div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto">
           <div class="card border-0 shadow">

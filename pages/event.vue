@@ -1,9 +1,9 @@
 <script setup>
-// const { data: datas, error } = await useFetch("/event");
 import axios from "axios";
 import { ref, reactive } from "vue";
 
 let datas = ref([]);
+
 async function getUser() {
   try {
     const response = await axios.get("/event");

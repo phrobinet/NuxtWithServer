@@ -43,7 +43,7 @@ const createEvent = async () => {
       <h1>Créer un événement</h1>
       <hr />
     </div>
-    <div class="container mt-5 pt-5">
+    <div class="container my-5 pt-5">
       <div class="row">
         <div class="col-12 col-sm-8 col-md-6 off-md-3 m-auto">
           <div class="card border-0 shadow">
@@ -105,9 +105,6 @@ const createEvent = async () => {
                 </div>
               </form>
             </div>
-            <pre>
-              {{ event }}
-            </pre>
           </div>
         </div>
       </div>
